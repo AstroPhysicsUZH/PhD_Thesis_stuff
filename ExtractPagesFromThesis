@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# use this to extract from your dis:
+# - page 1: the title page
+# - the last few pages with the cv
+
+pdftk thesis.pdf cat 1 output Thesis.Titlepage.pdf
+pdftk thesis.pdf cat 107-109 output CV.pdf
